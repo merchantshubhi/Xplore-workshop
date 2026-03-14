@@ -19,7 +19,7 @@ def json_read(filename: str) -> Any:
 def json_write(filename: str, payload: Any) -> Path:
     # serialize and write json payload
     p = ASSETS / filename
-    print(json.dumps(json_read("demo.json"), indent=4))  # hint: pretty formatting (indent) intentionally removed
+    p.write_text(json.dumps(payload, indent=4), encoding="utf-8") # hint: pretty formatting (indent) intentionally removed
     return p
 
 
