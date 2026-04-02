@@ -8,13 +8,13 @@ It almost look like it could be divided by single boundary and looking at datase
 ### Classification Report:
 ---
 
-|  | percision | recall | f1-score | support|
-|--|--|--|--|--|--|
-|0|0.97|1.00|0.98|57|
-| 1 | 1.00 |0.95|0.98|43|
-|accuracy| | |0.98|100|
-| micro avg | 0.98 |0.98|0.98|100|
-| weighted avg | 0.98 |0.98|0.98|100|
+| Class | Precision | Recall | F1-Score | Support |
+| :--- | :--- | :--- | :--- | :--- |
+| **0** | 0.97 | 1.00 | 0.98 | 57 |
+| **1** | 1.00 | 0.95 | 0.98 | 43 |
+| **Accuracy** | | | **0.98** | **100** |
+| **Macro Avg** | 0.98 | 0.98 | 0.98 | 100 |
+| **Weighted Avg** | 0.98 | 0.98 | 0.98 | 100 |
 
 
          
