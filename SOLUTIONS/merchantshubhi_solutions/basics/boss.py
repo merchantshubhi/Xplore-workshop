@@ -9,12 +9,12 @@ while (choice =='y'|choice=='Y') : # make 'Y' valid too
 
         # check length matching
 
-        if len(numbers) != len(operators): # this seems odd... u might say it's ... off by one
+        if len(numbers) != len(operators) + 1: # missed error : (
             print("length is not equal ") # replace wiht better message :)
             continue
         
         flag = True # huh this seems inverted
-        for i in range(0,len(numbers)): # indexing range fix
+        for i in range(0,len(operators)): # indexing range fix
             a, b, op = numbers[i], numbers[i+1], operators[i]
             # correct the ops
             match op:
@@ -38,7 +38,7 @@ while (choice =='y'|choice=='Y') : # make 'Y' valid too
                 print("Invalid ops vro")
                 break
 
-            numbers[i-1] = c
+            numbers[i+1] = c # fix index
         if not flag:
             continue
         print(f"Output: numbers[-1]")
